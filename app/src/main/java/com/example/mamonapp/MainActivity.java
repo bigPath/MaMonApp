@@ -3,6 +3,7 @@ package com.example.mamonapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.menu3:
                 Toast.makeText(this,"Menu 3 selected", Toast.LENGTH_SHORT);
+                Intent intent = new Intent(MainActivity.this, ViewByPeriod.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
