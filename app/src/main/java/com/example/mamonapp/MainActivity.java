@@ -29,16 +29,20 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.menu1:
-                Toast.makeText(this,"Menu 1 selected", Toast.LENGTH_SHORT);
+              //  Toast.makeText(this,"Menu 1 selected", Toast.LENGTH_SHORT);
+                Intent intentFu = new Intent(MainActivity.this, FullOptionsActivity.class);
+                startActivity(intentFu);
                 return true;
             case R.id.menu2:
-                Toast.makeText(this,"Menu 2 selected", Toast.LENGTH_SHORT);
+              //  Toast.makeText(this,"Menu 2 selected", Toast.LENGTH_SHORT);
+                Intent intentCu = new Intent(MainActivity.this, CustomiseActivity.class);
+                startActivity(intentCu);
                 return true;
 
             case R.id.menu3:
-                Toast.makeText(this,"Menu 3 selected", Toast.LENGTH_SHORT);
-                Intent intent = new Intent(MainActivity.this, ViewByPeriod.class);
-                startActivity(intent);
+              //  Toast.makeText(this,"Menu 3 selected", Toast.LENGTH_SHORT);
+                Intent intentViewP = new Intent(MainActivity.this, ViewByPeriodActivity.class);
+                startActivity(intentViewP);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

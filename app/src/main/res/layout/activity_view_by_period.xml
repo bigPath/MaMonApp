@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewByPeriod">
+    tools:context=".ViewByPeriodActivity">
 
     <TextView
         android:id="@+id/textViewStartDate"
@@ -50,23 +50,23 @@
 
     <CalendarView
         android:id="@+id/calendarViewStartD"
-        android:layout_width="177dp"
-        android:layout_height="200dp"
+        android:layout_width="190dp"
+        android:layout_height="285dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="17dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
         app:layout_constraintEnd_toStartOf="@+id/calendarViewEndD"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewStartDate" />
 
     <CalendarView
         android:id="@+id/calendarViewEndD"
-        android:layout_width="170dp"
-        android:layout_height="202dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
+        android:layout_width="174dp"
+        android:layout_height="282dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="17dp"
         app:layout_constraintStart_toEndOf="@+id/calendarViewStartD"
         app:layout_constraintTop_toBottomOf="@+id/textViewEndDate" />
