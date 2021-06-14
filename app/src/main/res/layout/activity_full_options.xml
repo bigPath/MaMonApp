@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".FullOptionsActivity">
 
+    <TextView
+        android:id="@+id/textRes"
+        android:layout_width="216dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="169dp"
+        android:text="testOkay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

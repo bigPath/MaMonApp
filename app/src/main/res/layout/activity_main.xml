@@ -8,33 +8,66 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="157dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginLeft="41dp"
-        android:layout_marginTop="66dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="13dp"
-        android:layout_marginBottom="616dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        android:layout_width="407dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ccnbinnov" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="171dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="66dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginRight="42dp"
-        android:layout_marginBottom="608dp"
+        android:layout_width="413dp"
+        android:layout_height="189dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/industrialmachine" />
+
+    <ImageButton
+        android:id="@+id/imgButtonCust"
+        android:layout_width="73dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="298dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgButtonFull"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/front_lock" />
+
+    <ImageButton
+        android:id="@+id/imgButtonFull"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginRight="190dp"
+        android:layout_marginBottom="298dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/industrialmachine" />
+        app:layout_constraintStart_toEndOf="@+id/imgButtonCust"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/fullop" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="210dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="160dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
